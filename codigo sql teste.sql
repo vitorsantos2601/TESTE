@@ -69,5 +69,13 @@ SELECT * FROM Jogadores;
 SELECT * FROM Torneios;
 SELECT * FROM Participacoes;
 
+-- a
 SELECT * FROM Jogadores ORDER BY Nome;
+-- b 
 SELECT Nome,ID_Equipa FROM	Jogadores;
+-- c
+SELECT * FROM Participacoes WHERE ID_torneio LIKE 1;
+
+-- d
+SELECT ID_Equipa, COUNT(*) AS total FROM Jogadores GROUP BY ID_Equipa HAVING COUNT(*) > 1;
+
